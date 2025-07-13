@@ -1,17 +1,24 @@
-import 'react-native-reanimated'; // MUST be first
 import { Stack } from 'expo-router';
+import { useState } from 'react';
 
+// Fake session logic (replace with Firebase later)
+const useSession = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  return { isLoggedIn, setIsLoggedIn };
+};
 
+export default function Layout() {
+  // const { isLoggedIn } = useSession();
+  // const router = useRouter();
+  // const pathname = usePathname();
 
-export default function RootLayout() {
+  // useEffect(() => {
+  //   if (!isLoggedIn && pathname !== '/login') {
+  //     router.replace('/login');
+  //   }
+  // }, [isLoggedIn, pathname]);
+
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ headerShown: false }} />
-      <Stack.Screen name="create-qr"  />
-      <Stack.Screen name="favorites"  />
-      <Stack.Screen name="history"  />
-
-      {/* <Drawer /> */}
-    </Stack>
+    <Stack screenOptions={{ headerShown: false }} />
   );
 }
