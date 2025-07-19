@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { COLORS } from '../constants/Colors';
 
 const actions = [
-  { icon: 'arrow-redo', label: 'To Opay', screen: 'transfer/opay' },
+  { icon: 'arrow-redo', label: 'To Zeepay', screen: 'transfer/zeepay' },
   { icon: 'business', label: 'To Bank', screen: 'transfer/bank' },
   { icon: 'cash', label: 'Withdraw', screen: 'withdraw' },
 ];

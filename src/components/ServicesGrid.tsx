@@ -9,6 +9,7 @@ const services = [
   { icon: 'bulb-outline', label: 'Electricity', screen: 'electricity' },
   { icon: 'gift-outline', label: 'Refer & Earn', screen: 'refer' },
   { icon: 'location-outline', label: 'Check-in', screen: 'checkin' },
+  { icon: 'logo-bitcoin', label: 'Financial', screen: 'finance' },
   { icon: 'grid-outline', label: 'More', screen: 'more' },
 ];
 
