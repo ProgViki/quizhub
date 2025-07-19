@@ -1,6 +1,6 @@
 // Example: app/(tabs)/rewards/index.tsx
+import { COLORS } from '@/src/constants/Colors';
 import { View, Text, StyleSheet } from 'react-native';
-import { COLORS } from '@/constants/colors';
 
 export default function MeScreen() {
   return (

@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { COLORS } from '@/constants/colors';
+import { COLORS } from '@/src/constants/Colors';
 
 export default function BalanceCard({ balance }: { balance: string }) {
   return (

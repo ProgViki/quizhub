@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { COLORS } from '@/src/constants/Colors';
+import { COLORS } from '../constants/Colors';
 
 const services = [
   { icon: 'phone-portrait-outline', label: 'Airtime', screen: 'airtime' },
