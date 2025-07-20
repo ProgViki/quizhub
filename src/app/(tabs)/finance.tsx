@@ -26,7 +26,7 @@ const financialProducts = [
   },
   {
     id: '4',
-    name: 'Fixed Deposits',
+    name: 'Fixed',
     icon: 'lock-closed-outline',
     description: 'Higher interest savings',
     balance: '₦300,000.00',
@@ -42,6 +42,13 @@ const financialProducts = [
     id: '6',
     name: 'SaveBox',
     icon: 'cube-outline',
+    description: 'Round-up savings',
+    balance: '₦18,750.00',
+  },
+  {
+    id: '7',
+    name: 'Saving Report',
+    icon: 'book-outline',
     description: 'Round-up savings',
     balance: '₦18,750.00',
   },
@@ -144,7 +151,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   productCard: {
-    width: '48%',
+    width: '49%',
     backgroundColor: COLORS.white,
     borderRadius: 12,
     padding: 16,

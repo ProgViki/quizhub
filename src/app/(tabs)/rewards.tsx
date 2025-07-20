@@ -6,6 +6,7 @@ export default function RewardsScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Rewards Screen</Text>
+      <Text>Coming soon</Text>
     </View>
   );
 }

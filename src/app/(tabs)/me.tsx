@@ -5,7 +5,9 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function MeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Rewards Screen</Text>
+      <Text style={styles.text}>My Profile Screen</Text>
+      <Text>Coming soon</Text>
+
     </View>
   );
 }
