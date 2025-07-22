@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { Ionicons, MaterialIcons, FontAwesome, Feather } from '@expo/vector-icons';
 import { COLORS } from '@/src/constants/Colors';
+import { useRouter } from 'expo-router';
+import { Alert } from 'react-native';
 
 export default function ProfileScreen() {
   // User data
@@ -11,6 +13,31 @@ export default function ProfileScreen() {
     balance: '₦45,820.50',
     level: 'Gold Member',
     avatar: require('@/assets/images/scanhubs.png'),
+  };
+
+  const router = useRouter();
+
+   const handleLogout = () => {
+    Alert.alert(
+      "Log Out",
+      "Are you sure you want to log out?",
+      [
+        {
+          text: "Cancel",
+          style: "cancel"
+        },
+        { 
+          text: "Log Out", 
+          onPress: () => {
+            // Here you would typically clear user session/tokens
+            // For example using your auth context or async storage
+            
+            // Then navigate to welcome page
+            router.replace('/welcome');
+          } 
+        }
+      ]
+    );
   };
 
   // Account sections
