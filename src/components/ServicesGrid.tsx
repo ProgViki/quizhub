@@ -11,6 +11,8 @@ const services = [
   { icon: 'location-outline', label: 'Check-in', screen: 'checkin' },
   { icon: 'logo-bitcoin', label: 'Financial', screen: 'finance' },
   { icon: 'grid-outline', label: 'More', screen: 'more' },
+  { icon: 'tv-outline', label: 'More', screen: 'more' },
+
 ];
 
 export default function ServicesGrid() {

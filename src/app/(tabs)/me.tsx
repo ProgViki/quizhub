@@ -26,14 +26,14 @@ export default function ProfileScreen() {
           text: "Cancel",
           style: "cancel"
         },
-        { 
+        {
           text: "Log Out", 
           onPress: () => {
             // Here you would typically clear user session/tokens
             // For example using your auth context or async storage
             
             // Then navigate to welcome page
-            router.replace('/welcome');
+            router.replace('../index.tsx');
           } 
         }
       ]
@@ -138,7 +138,7 @@ export default function ProfileScreen() {
 
       {/* Logout Button */}
       <TouchableOpacity style={styles.logoutButton}>
-        <Text style={styles.logoutText}>Log Out</Text>
+        <Text style={styles.logoutText} onPress={handleLogout}>Log Out</Text>
       </TouchableOpacity>
     </ScrollView>
   );
