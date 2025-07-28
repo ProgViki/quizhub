@@ -128,3 +128,178 @@ export default function DataService() {
 }
 
 // Add styles similar to AirtimeService with additional styles for network and plan selection
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: COLORS.black,
+    marginBottom: 24,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 12,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  input: {
+    flex: 1,
+    marginLeft: 10,
+    fontSize: 16,
+    color: COLORS.black,
+  },
+  detectedNetwork: {
+    backgroundColor: '#E6F7FF',
+    padding: 10,
+    borderRadius: 8,
+    marginBottom: 20,
+    borderLeftWidth: 4,
+    borderLeftColor: COLORS.primary,
+  },
+  detectedNetworkText: {
+    color: COLORS.primary,
+    fontSize: 14,
+    fontWeight: '500',
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: COLORS.black,
+    marginBottom: 12,
+  },
+  networkList: {
+    paddingBottom: 5,
+  },
+  networkButton: {
+    backgroundColor: '#F8F9FA',
+    borderRadius: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 16,
+    marginRight: 10,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  selectedNetworkButton: {
+    backgroundColor: COLORS.primary,
+    borderColor: COLORS.primary,
+  },
+  networkText: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: COLORS.black,
+  },
+  selectedNetworkText: {
+    color: '#fff',
+  },
+  planButton: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 10,
+    padding: 16,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  selectedPlanButton: {
+    backgroundColor: '#E6F7FF',
+    borderColor: COLORS.primary,
+  },
+  planInfo: {
+    flex: 1,
+  },
+  planName: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: COLORS.black,
+    marginBottom: 4,
+  },
+  planData: {
+    fontSize: 12,
+    color: '#6C757D',
+    marginBottom: 2,
+  },
+  planValidity: {
+    fontSize: 12,
+    color: '#6C757D',
+  },
+  planPrice: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: COLORS.primary,
+  },
+  buyButton: {
+    backgroundColor: COLORS.primary,
+    borderRadius: 10,
+    padding: 16,
+    alignItems: 'center',
+    marginTop: 20,
+    shadowColor: COLORS.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  disabledBuyButton: {
+    backgroundColor: '#CED4DA',
+    shadowColor: 'transparent',
+  },
+  buyButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  // For the "More Options" section
+  moreOptionsContainer: {
+    marginTop: 20,
+  },
+  moreOptionsButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 12,
+  },
+  moreOptionsText: {
+    fontSize: 14,
+    color: COLORS.primary,
+    marginLeft: 8,
+    fontWeight: '500',
+  },
+  // For the "Recent Purchases" section
+  recentPurchasesContainer: {
+    marginTop: 24,
+  },
+  recentPurchaseItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E9ECEF',
+  },
+  recentPurchaseInfo: {},
+  recentPurchaseDate: {
+    fontSize: 12,
+    color: '#6C757D',
+    marginBottom: 4,
+  },
+  recentPurchasePlan: {
+    fontSize: 14,
+    color: COLORS.black,
+    fontWeight: '500',
+  },
+  recentPurchaseAmount: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: COLORS.black,
+  },
+});
