@@ -110,18 +110,81 @@ export default function TVService() {
 }
 
 const styles = StyleSheet.create({
-  // Similar to previous styles with additions for TV packages
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: COLORS.black,
+    marginBottom: 24,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 12,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  input: {
+    flex: 1,
+    marginLeft: 10,
+    fontSize: 16,
+    color: COLORS.black,
+  },
+  providerList: {
+    paddingBottom: 5,
+    marginBottom: 20,
+  },
+  providerButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 16,
+    marginRight: 10,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  selectedProviderButton: {
+    backgroundColor: COLORS.primary,
+    borderColor: COLORS.primary,
+  },
+  providerIcon: {
+    marginRight: 8,
+  },
+  providerText: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: COLORS.black,
+  },
+  selectedProviderText: {
+    color: '#fff',
+  },
+  packageList: {
+    marginBottom: 20,
+  },
   packageButton: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: COLORS.secondary,
+    backgroundColor: '#F8F9FA',
     borderRadius: 10,
-    padding: 15,
-    marginBottom: 10,
+    padding: 16,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
   },
   selectedPackageButton: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: '#E6F7FF',
+    borderColor: COLORS.primary,
   },
   packageInfo: {
     flex: 1,
@@ -130,15 +193,93 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     color: COLORS.black,
+    marginBottom: 4,
   },
   packageDesc: {
     fontSize: 12,
-    color: COLORS.gray,
+    color: '#6C757D',
   },
   packagePrice: {
     fontSize: 16,
     fontWeight: 'bold',
+    color: COLORS.primary,
+  },
+  buyButton: {
+    backgroundColor: COLORS.primary,
+    borderRadius: 10,
+    padding: 16,
+    alignItems: 'center',
+    marginTop: 8,
+    shadowColor: COLORS.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  disabledBuyButton: {
+    backgroundColor: '#CED4DA',
+    shadowColor: 'transparent',
+  },
+  buyButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: COLORS.black,
+    marginBottom: 12,
+  },
+  durationOptions: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
+  durationButton: {
+    width: '23%',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 8,
+    padding: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  selectedDurationButton: {
+    backgroundColor: '#E6F7FF',
+    borderColor: COLORS.primary,
+  },
+  durationText: {
+    fontSize: 12,
     color: COLORS.black,
   },
-  // ... other existing styles
+  recentSubscriptions: {
+    marginTop: 24,
+  },
+  recentSubscriptionItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E9ECEF',
+  },
+  recentSubscriptionLeft: {
+    flex: 1,
+  },
+  recentSubscriptionProvider: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: COLORS.black,
+    marginBottom: 4,
+  },
+  recentSubscriptionDate: {
+    fontSize: 12,
+    color: '#6C757D',
+  },
+  recentSubscriptionAmount: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: COLORS.black,
+  },
 });

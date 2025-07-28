@@ -118,7 +118,61 @@ export default function ElectricityService() {
 }
 
 const styles = StyleSheet.create({
-  // ... existing styles
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: COLORS.black,
+    marginBottom: 24,
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 12,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  input: {
+    flex: 1,
+    marginLeft: 10,
+    fontSize: 16,
+    color: COLORS.black,
+  },
+  providerList: {
+    paddingBottom: 5,
+  },
+  providerButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 16,
+    marginRight: 10,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  selectedProviderButton: {
+    backgroundColor: COLORS.primary,
+    borderColor: COLORS.primary,
+  },
+  providerText: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: COLORS.black,
+    marginLeft: 8,
+  },
+  selectedProviderText: {
+    color: '#fff',
+  },
   meterTypeContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -126,13 +180,16 @@ const styles = StyleSheet.create({
   },
   meterTypeButton: {
     width: '48%',
-    backgroundColor: COLORS.secondary,
+    backgroundColor: '#F8F9FA',
     borderRadius: 8,
     padding: 12,
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
   },
   selectedMeterTypeButton: {
     backgroundColor: COLORS.primary,
+    borderColor: COLORS.primary,
   },
   meterTypeText: {
     fontSize: 14,
@@ -140,6 +197,89 @@ const styles = StyleSheet.create({
     color: COLORS.black,
   },
   selectedMeterTypeText: {
-    color: COLORS.white,
+    color: '#fff',
+  },
+  amountInputContainer: {
+    marginBottom: 24,
+  },
+  amountOptions: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    marginTop: 12,
+  },
+  amountOption: {
+    width: '30%',
+    backgroundColor: '#F8F9FA',
+    borderRadius: 8,
+    padding: 12,
+    alignItems: 'center',
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: '#E9ECEF',
+  },
+  selectedAmountOption: {
+    backgroundColor: '#E6F7FF',
+    borderColor: COLORS.primary,
+  },
+  amountOptionText: {
+    fontSize: 14,
+    color: COLORS.black,
+  },
+  buyButton: {
+    backgroundColor: COLORS.primary,
+    borderRadius: 10,
+    padding: 16,
+    alignItems: 'center',
+    marginTop: 8,
+    shadowColor: COLORS.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  disabledBuyButton: {
+    backgroundColor: '#CED4DA',
+    shadowColor: 'transparent',
+  },
+  buyButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: COLORS.black,
+    marginBottom: 12,
+  },
+  recentPayments: {
+    marginTop: 24,
+  },
+  recentPaymentItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E9ECEF',
+  },
+  recentPaymentLeft: {
+    flex: 1,
+  },
+  recentPaymentDisco: {
+    fontSize: 14,
+    fontWeight: '500',
+    color: COLORS.black,
+    marginBottom: 4,
+  },
+  recentPaymentDate: {
+    fontSize: 12,
+    color: '#6C757D',
+  },
+  recentPaymentAmount: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: COLORS.black,
   },
 });
