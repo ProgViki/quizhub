@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, Share } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from '@/src/constants/Colors';
 
 export default function ReferralService() {
   const referralCode = 'ZEEPAY1234';

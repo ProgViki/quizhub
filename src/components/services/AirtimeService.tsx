@@ -1,7 +1,7 @@
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from '@/src/constants/Colors';
 
 const airtimeAmounts = [100, 200, 500, 1000, 2000, 5000];
 

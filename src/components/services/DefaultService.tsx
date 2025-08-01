@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
+import { COLORS } from '@/src/constants/Colors';
 
 export default function DefaultService() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function DefaultService() {
   return (
     <View style={styles.container}>
       <Image 
-        source={require('@/assets/images/service-not-found.png')} 
+        source={require('@/assets/images/NotFound.jpg')} 
         style={styles.image}
         resizeMode="contain"
       />

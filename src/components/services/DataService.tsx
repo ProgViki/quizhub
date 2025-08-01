@@ -1,7 +1,7 @@
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { useState, useEffect } from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from '@/src/constants/Colors';
 
 const networkProviders = [
   { id: '1', name: 'MTN', code: '*556#' },

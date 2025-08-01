@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, TextInput } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from '@/src/constants/Colors';
 
 const discoProviders = [
   { id: '1', name: 'IKEDC', icon: 'flash-outline', code: 'ikeja-electric' },

@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from '@/src/constants/Colors';
 
 const financialProducts = [
   {

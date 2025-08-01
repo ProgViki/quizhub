@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import { COLORS } from '@/constants/colors';
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
+import { COLORS } from '@/src/constants/Colors';
 
 export default function CheckinService() {
   const [checkedInToday, setCheckedInToday] = useState(false);
@@ -22,7 +22,7 @@ export default function CheckinService() {
       
       <View style={styles.checkinCard}>
         <Image 
-          source={require('@/assets/images/checkin-reward.png')} 
+          source={require('@/assets/images/rewards.png')} 
           style={styles.checkinImage}
         />
         
