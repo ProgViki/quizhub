@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS } from '../constants/Colors';
+import { useRouter } from 'expo-router';
 
 const services = [
   { icon: 'phone-portrait-outline', label: 'Airtime', screen: 'airtime' },
@@ -16,6 +17,7 @@ const services = [
 ];
 
 export default function ServicesGrid() {
+   const router = useRouter();
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Other Payments</Text>
@@ -27,11 +29,11 @@ export default function ServicesGrid() {
         renderItem={({ item }) => (
           <TouchableOpacity 
             style={styles.serviceItem}
-            onPress={() => console.log('Navigate to', item.screen)}
+            onPress={() => router.push(`/services/${item.screen}`)}
           >
             <View style={styles.iconContainer}>
-              <Ionicons 
-                name={(item.icon) as any} 
+              <Ionicons
+                name={(item.icon) as any}
                 size={24} 
                 color={COLORS.primary} 
               />

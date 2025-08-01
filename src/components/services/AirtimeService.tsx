@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 16,
     alignItems: 'center',
-    marginTop: 20,
+    marginVertical: 40,
   },
   disabledBuyButton: {
     backgroundColor: COLORS.lightGray,
