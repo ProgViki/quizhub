@@ -1,13 +1,24 @@
-import { Slot, Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
+import { Stack } from 'expo-router';
+import { useState } from 'react';
 
-// import { COLORS } from '@/src/constants/colors';
+// Fake session logic (replace with Firebase later)
+const useSession = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  return { isLoggedIn, setIsLoggedIn };
+};
 
-export default function RootLayout() {
+export default function Layout() {
+  // const { isLoggedIn } = useSession();
+  // const router = useRouter();
+  // const pathname = usePathname();
+
+  // useEffect(() => {
+  //   if (!isLoggedIn && pathname !== '/login') {
+  //     router.replace('/login');
+  //   }
+  // }, [isLoggedIn, pathname]);
+
   return (
-     <>
-      <StatusBar style="light" />
-      <Slot />
-    </>
+    <Stack screenOptions={{ headerShown: false }} />
   );
 }
