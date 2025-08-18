@@ -23,7 +23,7 @@ export default function QuizTab() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0a0a0a', padding: 24 },
+  container: { flex: 1, backgroundColor: '#0a0a0a', padding: 24, justifyContent: 'center', },
   title: { color: 'orange', fontSize: 22, fontWeight: 'bold', marginBottom: 20, textAlign: 'center' },
   button: {
     backgroundColor: '#1a1a1a',
