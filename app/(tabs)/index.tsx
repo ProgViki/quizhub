@@ -12,7 +12,7 @@ export default function QuizTab() {
       {sections.map((sec) => (
         <TouchableOpacity
           key={sec}
-          onPress={() => router.push(`/quiz/${sec}`)} // ✅ This triggers [section].tsx
+          // onPress={() => router.push(`/quiz/${sec}`)}
           style={styles.button}
         >
           <Text style={styles.buttonText}>{sec.toUpperCase()}</Text>
