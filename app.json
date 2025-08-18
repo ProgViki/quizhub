@@ -1,28 +1,22 @@
 {
   "expo": {
-    "name": "neoscan",
-    "slug": "neoscan",
+    "name": "quizhub",
+    "slug": "quizhub",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/neoscan.png",
-    "scheme": "neoscan",
+    "icon": "./assets/images/icon.png",
+    "scheme": "quizhub",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "permissions": [
-        "android.permission.CAMERA",
-        "android.permission.VIBRATE",
-        "android.permission.READ_EXTERNAL_STORAGE"
-      ],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/neoscan.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "package": "com.progvikii.neoscan"
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "bundler": "metro",
@@ -31,30 +25,18 @@
     },
     "plugins": [
       "expo-router",
-      "expo-camera",
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you share them with your friends."
-        }
-      ],
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/neoscan.png",
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
       ]
-      
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "router": {}
-      
     }
   }
 }
